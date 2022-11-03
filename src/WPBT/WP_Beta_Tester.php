@@ -238,7 +238,7 @@ class WP_Beta_Tester {
 			$response = wp_remote_retrieve_body( $response );
 
 			if ( is_wp_error( $response ) ) {
-				return null;
+				return '';
 			}
 
 			$response = (array) json_decode( $response );
